@@ -12,7 +12,7 @@ def send_email(mailID,title,body='',attachment=''):
     :param attachement: name of attachment file
     :result: None
     '''
-    fromaddr = "emotiondetection123@gmail.com"
+    fromaddr = "you email"
     toaddr = mailID 
     # instance of MIMEMultipart 
     msg = MIMEMultipart() 
@@ -43,7 +43,7 @@ def send_email(mailID,title,body='',attachment=''):
     # start TLS for security 
     s.starttls() 
     # Authentication 
-    s.login(fromaddr, "Emotiondetection#") 
+    s.login(fromaddr, "password")
     # Converts the Multipart msg into a string 
     text = msg.as_string() 
     # sending the mail 
